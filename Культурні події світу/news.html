@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новини — Культурні події світу</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/news.css" />
+  <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+          <img src="img/logo.png" alt="Логотип" class="logo" />
+          <button id="burger" class="burger">&#9776;</button>
+          <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="afisha.html">Афіша</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+  <main>
+    <section class="news-slider-section">
+      <h2>Останні новини</h2>
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <div class="news-slide">
+            <img src="img/news1.jpg" alt="Новина 1" />
+            <h3>Каннський кінофестиваль стартує з новою програмою</h3>
+            <p>Цього року у фокусі — молоді режисери з усього світу.</p>
+          </div>
+          <div class="news-slide">
+            <img src="img/news2.jpg" alt="Новина 2" />
+            <h3>Октоберфест 2025 готується до рекордної кількості гостей</h3>
+            <p>Очікується понад 6 мільйонів відвідувачів.</p>
+          </div>
+          <div class="news-slide">
+            <img src="img/news3.jpg" alt="Новина 3" />
+            <h3>Фестиваль Холі: кольорові вулиці Індії знову ожили</h3>
+            <p>Мільйони людей святкують весну, кидаючи фарби.</p>
+          </div>
+          <div class="news-slide">
+            <img src="img/news4.jpg" alt="Карнавал у Ріо" />
+            <h3>Карнавал у Ріо</h3>
+            <p>Один з найбільших карнавальних фестивалів світу. Вулиці Ріо наповнені танцями та яскравими кольорами.</p>
+          </div>
+          <div class="news-slide">
+            <img src="img/news5.jpg" alt="Фестиваль світла в Ліоні" />
+            <h3>Фестиваль світла в Ліоні</h3>
+            <p>Неймовірний фестиваль світла, що перетворює вулиці Ліона на казковий світ.</p>
+          </div>
+          <div class="news-slide">
+            <img src="img/news6.jpg" alt="Глендалійський музичний фестиваль" />
+            <h3>Глендалійський музичний фестиваль</h3>
+            <p>Фестиваль, на якому звучать найкращі музичні композиції з усього світу.</p>
+          </div>
+          <div class="news-slide">
+            <img src="img/news7.jpg" alt="Единбурзький фестиваль мистецтв" />
+            <h3>Единбурзький фестиваль мистецтв</h3>
+            <p>Цей фестиваль — одне з найбільших культурних подій в світі, що збирає акторів, художників і музикантів.</p>
+          </div>
+          <div class="news-slide">
+            <img src="img/news8.jpg" alt="Венеційський карнавал" />
+            <h3>Венеційський карнавал</h3>
+            <p>Класичний карнавал, відомий своїми масками та історичними костюмами.</p>
+          </div>
+        </div>
+        <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+        <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+      </div>
+      <div class="slider-indicators" id="sliderIndicators">
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+        <p>&copy; 2025 Культурні події світу. Всі права захищені.</p>
+        <p><a href="#">Політика конфіденційності</a></p>
+      </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/news.js"></script>
+</body>
+</html>

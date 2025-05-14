@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Афіша | Культурні події світу</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+          <img src="img/logo.png" alt="Логотип" class="logo" />
+          <button id="burger" class="burger">&#9776;</button>
+          <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="afisha.html">Афіша</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  <main>
+    <section class="afisha">
+      <div class="container">
+        <h1>Афіша культурних подій</h1>
+        <div class="event-list">
+            <div class="event-item">
+                <h3>Каннський кінофестиваль</h3>
+                <p><strong>Дата:</strong> 14–25 травня 2025</p>
+                <p><strong>Країна:</strong> Франція</p>
+                <button onclick="openModal('Каннський кінофестиваль', 'Один із найпрестижніших кінофестивалів світу, що проходить у травні на Лазуровому узбережжі Франції.')">Детальніше</button>
+              </div>
+              
+              <div class="event-item">
+                <h3>Октоберфест</h3>
+                <p><strong>Дата:</strong> 20 вересня – 5 жовтня 2025</p>
+                <p><strong>Країна:</strong> Німеччина</p>
+                <button onclick="openModal('Октоберфест', 'Найбільший фестиваль пива у світі, що проводиться в Мюнхені кожної осені.')">Детальніше</button>
+              </div>
+              
+              <div class="event-item">
+                <h3>Фестиваль Холі</h3>
+                <p><strong>Дата:</strong> 14 березня 2025</p>
+                <p><strong>Країна:</strong> Індія</p>
+                <button onclick="openModal('Фестиваль Холі', 'Індійське свято весни, відоме киданням барвистого порошку, яке символізує перемогу добра над злом.')">Детальніше</button>
+              </div>
+              
+              <div class="event-item">
+                <h3>Венеційський карнавал</h3>
+                <p><strong>Дата:</strong> 22 лютого – 4 березня 2025</p>
+                <p><strong>Країна:</strong> Італія</p>
+                <button onclick="openModal('Венеційський карнавал', 'Всесвітньо відомий фестиваль із венеційськими масками, парадами і театралізованими виставами.')">Детальніше</button>
+              </div>
+              
+              <div class="event-item">
+                <h3>Карнавал у Ріо</h3>
+                <p><strong>Дата:</strong> 1–6 березня 2025</p>
+                <p><strong>Країна:</strong> Бразилія</p>
+                <button onclick="openModal('Карнавал у Ріо', 'Один із найграндіозніших карнавалів світу з парадами самби, яскравими костюмами та вуличними виставами.')">Детальніше</button>
+              </div>
+              
+              <div class="event-item">
+                <h3>Фестиваль світла в Ліоні</h3>
+                <p><strong>Дата:</strong> 5–8 грудня 2025</p>
+                <p><strong>Країна:</strong> Франція</p>
+                <button onclick="openModal('Фестиваль світла в Ліоні', 'Місто Ліон перетворюється на світлову казку завдяки інсталяціям художників з усього світу.')">Детальніше</button>
+              </div>
+              
+              <div class="event-item">
+                <h3>Единбурзький фестиваль мистецтв</h3>
+                <p><strong>Дата:</strong> 1–25 серпня 2025</p>
+                <p><strong>Країна:</strong> Шотландія</p>
+                <button onclick="openModal('Единбурзький фестиваль мистецтв', 'Найбільший у світі фестиваль виконавського мистецтва з театральними, музичними та танцювальними виступами.')">Детальніше</button>
+              </div>
+              
+              <div class="event-item">
+                <h3>Глендалійський музичний фестиваль</h3>
+                <p><strong>Дата:</strong> 10–15 липня 2025</p>
+                <p><strong>Країна:</strong> США</p>
+                <button onclick="openModal('Глендалійський музичний фестиваль', 'Щорічний музичний фестиваль в Каліфорнії, що об’єднує джаз, рок та інді виконавців.')">Детальніше</button>
+              </div>
+              
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Культурні події світу. Всі права захищені.</p>
+      <p><a href="#">Політика конфіденційності</a></p>
+    </div>
+  </footer>
+
+
+  <!-- Модальне вікно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/afisha.js"></script>
+</body>
+</html>

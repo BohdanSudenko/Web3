@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Галерея — Культурні події світу</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+          <img src="img/logo.png" alt="Логотип" class="logo" />
+          <button id="burger" class="burger">&#9776;</button>
+          <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="afisha.html">Афіша</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+  <main>
+    <section class="gallery-section">
+      <h2>Галерея подій</h2>
+      <div class="gallery-grid">
+        <img src="img/gallery1.jpg" alt="Карнавал у Ріо" onclick="openModal(this)" />
+        <img src="img/gallery2.jpg" alt="Фестиваль світла в Ліоні" onclick="openModal(this)" />
+        <img src="img/gallery3.jpg" alt="Глендалійський музичний фестиваль" onclick="openModal(this)" />
+        <img src="img/gallery4.jpg" alt="Единбурзький фестиваль мистецтв" onclick="openModal(this)" />
+        <img src="img/gallery5.jpg" alt="Венеційський карнавал" onclick="openModal(this)" />
+        <img src="img/gallery6.jpg" alt="Фестиваль Холі" onclick="openModal(this)" />
+        <img src="img/gallery7.jpg" alt="Октоберфест" onclick="openModal(this)" />
+        <img src="img/gallery8.jpg" alt="Каннський кінофестиваль" onclick="openModal(this)" />  
+    </div>
+    </section>
+
+    <!-- Модальне вікно -->
+    <div id="modal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg" />
+      <div id="caption"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Культурні події світу. Всі права захищені.</p>
+      <p><a href="#">Політика конфіденційності</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
